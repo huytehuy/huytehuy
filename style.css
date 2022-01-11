@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* div{
+    border: 1px solid black;
+} */
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 47px;
+    background-color: black;
+    color: white;
+    position: fixed;
+    top:0;
+    z-index: 1;
+}
+.header_left{
+    display: flex;
+}
+
+.header_left_item{
+    padding: 12px 24px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.fa-sort-down{
+    padding-left: 5px;
+}
+.header_left_item:hover{
+    background-color: #ccc;
+    color: black;
+    cursor: pointer;
+}
+.fa-search{
+    padding: 12px 24px;
+    height: 100%;
+    width: 100%;
+}
+.fa-search:hover{
+    background-color: red;
+    cursor: pointer;
+}
+.more_item{
+    list-style: none;
+    text-transform: capitalize;
+    position: absolute;
+    top:100%;
+    left: 0;
+    width: 150px;
+    background-color: white;
+    display: none;
+    padding-left: 0;
+}
+.more{
+    position: relative;
+    display: flex;
+}
+.more:hover .more_item{
+    display: block;
+}
+.more_item li{
+    padding: 8px 16px; 
+}
+.more .more_item li:hover{
+    background-color: #ccc;
+}
+.content{
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+.content_h1{
+    font-weight: 300;
+}
+.content_h1_sub{
+    font-style: italic;
+    opacity: 0.6;
+    margin-bottom: 0px;
+}
+.contain_main{
+    text-align: justify;
+    width: 768px;
+    margin: auto;
+}
+#carouselExampleInterval{
+    margin-top: 47px;
+}
+.carousel-item{
+    position: relative;
+    top:0;
+}
+.carousel-item div{
+    position: absolute;
+    color:white;
+    bottom:30px;
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+}
+.carousel-item h2{
+    bottom: 10%;
+}.content_block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.block-item img{
+    width: 60%;
+    border-radius: 5px;
+}
+.block-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.block-item p{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.tour{
+    background-color: black;
+    color: white;
+    padding: 64px 16px;
+}
+.tour_text{
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    padding: 0 16px;
+}
+.tour_text>p{
+    font-size: 30px;
+    margin: 10px 0;
+}
+.tour_text>i{
+    display: block;
+    margin: 15px 0;
+    opacity: 0.6;
+}
+.date{
+    background-color: white;
+}
+.month{
+    color: #757575;
+    text-align: left;
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+}
+.sold{
+    background-color: red;
+    color: white;
+    margin-left: 16px;
+    padding: 0 8px;
+}
+.last{
+    display: flex;
+    justify-content: space-between;
+}
+.last span{
+    margin-right: 16px;
+    padding: 0px 8px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+}
+.tour_ticket{
+    display: flex;
+    max-width: 800px;
+    margin: auto;
+    padding: 32px 8px;
+}
+.ticket{
+    color: black;
+    padding: 0 8px;
+}
+.card img{
+    width: 100%;
+}
+.card-body>span{
+    margin:15px 0px;
+    display: block;
+    opacity: 0.6;
+}
+.card{
+    border-radius: 0;
+    border: none;
+}
+.img_ticket{
+    background-color: black;
+}
+.img_ticket img:hover{
+    opacity: 0.6;
+}
+.button_ticket{
+    display: block;
+    padding: 8px 16px;
+    background-color: black;
+    color: white;
+    width: fit-content;
+    border: none;
+}
+.button_ticket:hover{
+    color:black;
+    background-color: #ccc;
+}
+.modal-title{
+    text-align: center;
+
+    width: 100%;
+    margin: 10px 0;
+}
+.modal-header{
+    flex-direction: column-reverse;
+    padding: 32px 16px;
+    background-color: #009688;
+    color: #fff;
+}
